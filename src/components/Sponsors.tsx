@@ -26,7 +26,7 @@ export default function Sponsors() {
         }`}>
           <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 border border-white/10">
             <img 
-              src="/public/NSTxADPU-white-removebg.png" 
+              src="public/NSTxADPU-white-removebg.png" 
               alt="Ajeenkya DY Patil University"
               className="h-24 md:h-32 object-contain"
             />
