@@ -29,7 +29,7 @@ export default function WinnerGifts() {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden" ref={ref}>
+    <section id="winner-gifts" className="py-24 relative overflow-hidden" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center transform transition-all duration-1000 ${inView ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
           <h2 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-8">

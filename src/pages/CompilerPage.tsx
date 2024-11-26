@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Play, Send } from 'lucide-react';
 import Editor from "@monaco-editor/react";
+import Layout from '../components/Layout';
 
 export default function CompilerPage() {
   const navigate = useNavigate();
@@ -62,8 +63,8 @@ export default function CompilerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-8">
           <Link 
             to="/"
@@ -166,6 +167,6 @@ export default function CompilerPage() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

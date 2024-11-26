@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Code2, ExternalLink } from 'lucide-react';
+import Layout from '../components/Layout';
 
 export default function SubmissionsPage() {
   const [submissions, setSubmissions] = useState([]);
@@ -27,7 +28,7 @@ export default function SubmissionsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-black">
+    <Layout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center justify-between mb-8">
           <Link 
@@ -95,6 +96,6 @@ export default function SubmissionsPage() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

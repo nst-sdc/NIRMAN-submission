@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Event Details', to: 'event-details' },
-    { name: 'Winner Gifts', to: 'Winner-gifts' }
+    { name: 'Winner Gifts', to: 'winner-gifts' }
   ];
 
   const handleNavClick = (to) => {
